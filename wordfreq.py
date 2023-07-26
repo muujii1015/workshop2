@@ -3,7 +3,7 @@
 import sys
 import string
 
-words = open(input("What file to copy from: "))
+words = sys.stdin.read().split()
 d = dict()
 for word in words:
 	t = word.translate(str.maketrans('','',string.punctuation)).upper()
