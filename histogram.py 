@@ -19,3 +19,5 @@ def parse_text_histogram(text):
 		stars_count = int(count/total_count)*24)
 		histogram =f"{word.ljust(5)} [{'*' * stars_count:<6}] {percentage:.0f}%"
 		print(histogram)
+
+
