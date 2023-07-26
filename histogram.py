@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import sys
 def parse_text_histogram(text):
 	word_counts = {}
@@ -9,8 +7,7 @@ def parse_text_histogram(text):
 	lines = text.strip().split('\n')
 
 	for line in lines:
-
-		word, count = line.split()
+                word, count = line.split()
 		count = int(count)
 		word_counts[word] = count
 		total_count += count
