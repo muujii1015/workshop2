@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 import sys
 import string
+<<<<<<< HEAD
 words = sys.stdin.read().split()
+=======
+
+words = open(input("What file to copy from: "))
+>>>>>>> parent of 0a05f63 (Revert "task5")
 d = dict()
 for word in words:
         t = word.translate(str.maketrans('','',string.punctuation)).upper()
